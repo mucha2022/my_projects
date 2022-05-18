@@ -29,8 +29,9 @@
         {
             $sql = "INSERT INTO users(user, pass)
                     VALUES ('" . $_POST['user'] .  "','" . $_POST['pass'] . "')";
-            echo $sql;       
-            // $result = $conn->query($sql);
+            // echo $sql;
+            console.log($sql);       
+            $result = $conn->query($sql);
             echo('<p>Byl jste úspěšně zaregistrován.</p>');
         }
         ?>
