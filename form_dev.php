@@ -28,7 +28,7 @@
         if ($_POST)
         {
             $sql = "INSERT INTO uzivatele (user, pass)
-                    VALUES (?, ?), $_POST['user'], $_POST['pass'])";
+                    VALUES ($_POST['user'], $_POST['pass'])";
             $result = $conn->query($sql);
             echo('<p>Byl jste úspěšně zaregistrován.</p>');
         }
