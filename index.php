@@ -30,16 +30,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 /*
 
-foreach ($uzivatele as $u)
-{
-    echo('<tr><td>' . htmlspecialchars($u['jmeno']));
-    echo('</td><td>' . htmlspecialchars($u['prijmeni']));
-    $datum = date("d.m.Y", strtotime($u['datum_narozeni']));
-    echo('</td><td>' . htmlspecialchars($datum));
-    echo('</td><td>' . htmlspecialchars($u['pocet_clanku']));
-    echo('</td></tr>');
-}
-echo('</table>');
+
 
 */
 
