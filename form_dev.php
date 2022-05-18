@@ -30,7 +30,7 @@
             $sql = "INSERT INTO users(user, pass)
                     VALUES ('" . $_POST['user'] .  "','" . $_POST['pass'] . "')";
             // echo $sql;
-            // echo "<script>console.log(".$sql.")<script>";       
+            echo "<script>console.log({$sql})<script>";       
             $result = $conn->query($sql);
             echo('<p>Byl jste úspěšně zaregistrován.</p>');
         }
