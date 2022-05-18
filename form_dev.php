@@ -27,7 +27,7 @@
 
         if ($_POST)
         {
-            $sql = "INSERT INTO uzivatele (user, pass)
+            $sql = "INSERT INTO users(user, pass)
                     VALUES ('user', 'pass')";
                     //  VALUES ($_POST['user'], $_POST['pass'])";
             $result = $conn->query($sql);
@@ -46,6 +46,8 @@
         <?php
             $sql = "SELECT id, user, pass FROM users";
             $result = $conn->query($sql);
+
+            echo "<br><br><br>";
 
             if ($result->num_rows > 0) {
               // output data of each row
