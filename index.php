@@ -2,9 +2,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+$dbname = "test";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
@@ -24,4 +25,4 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 $conn->close();
-?>  
+?> 
