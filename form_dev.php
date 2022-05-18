@@ -28,8 +28,7 @@
         if ($_POST)
         {
             $sql = "INSERT INTO users(user, pass)
-                    VALUES (" . $_POST['user'] .  ", " . $_POST['pass'] . ")";
-                    //  VALUES ($_POST['user'], $_POST['pass'])";
+                    VALUES (''" . $_POST['user'] .  "','" . $_POST['pass'] . "')";
             echo $sql;       
             // $result = $conn->query($sql);
             echo('<p>Byl jste úspěšně zaregistrován.</p>');
