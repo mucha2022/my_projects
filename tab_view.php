@@ -1,8 +1,7 @@
 <?php
 
-    $tab_view = "tab_view";
-    echo $tab_view;
-/*
+    // Include config file
+    require_once "config.php";
 
     $sql = "SELECT id, user, pass FROM users";
     $result = $link->query($sql);
@@ -16,5 +15,6 @@
         }
     } else {
         echo "0 results";
-    }*/
+    }
+    $link->close(); 
 ?>
