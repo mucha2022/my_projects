@@ -82,7 +82,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
+    // Include config file
+    require_once "tab_viwe.php";
+
     // Close connection
     mysqli_close($link);
 }
@@ -126,6 +128,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
+    </div>
+    <div id="tab_view">
+    <?php 
+        if(!empty($login_err)){
+            echo 'info: ' . $tab_view;
+        }        
+        ?>
     </div>
 </body>
 </html>
