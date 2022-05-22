@@ -3,7 +3,7 @@
     // Include config file
     require_once "config.php";
 
-    $sql = "SELECT id, user, pass FROM users";
+    $sql = "SELECT id, username, password FROM users";
     $result = $link->query($sql);
 
     echo "<br><br><br>";
