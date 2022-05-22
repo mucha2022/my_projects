@@ -86,7 +86,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Include "tab_view.php"
     require_once "tab_view.php";
-
+    echo 'info: ' . $tab_view;
+    
     // Close connection
     mysqli_close($link);
 }
@@ -134,7 +135,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div id="tab_view">
     <?php 
         // require_once "tab_view.php";
-        echo 'info: ' . $tab_view;
+        // echo 'info: ' . $tab_view;
     ?>
     </div>
 </body>
