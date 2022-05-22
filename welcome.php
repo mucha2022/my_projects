@@ -17,8 +17,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body{ font: 14px sans-serif; text-align: center; }
-        .wrapper{ width: 360px; padding: 20px; text-align: center; }
-        .center { margin-left: auto; margin-right: auto; }   
+        .center { style="width:400px; margin:0 auto; }   
     </style>
 </head>
 <body>
@@ -31,11 +30,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             require_once "tab_view.php";
         ?>
         </div>
-    </p>
-    <div class="wrapper">
-    <?php 
-        // require_once "tab_view.php";
-    ?>
-    </div>    
+    </p> 
 </body>
 </html>

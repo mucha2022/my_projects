@@ -6,7 +6,7 @@
     $sql = "SELECT id, username, password FROM users";
     $result = $con->query($sql);
 
-    echo "<br><br><br>";
+    // echo "<br><br><br>";
 
     if ($result->num_rows > 0) {
         echo('<h2>Users</h2><table border="1">');
