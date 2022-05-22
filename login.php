@@ -129,7 +129,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <div class="wrapper">
     <?php 
-        // require_once "tab_view.php";
+        require_once "tab_view.php";
     ?>
     </div>
 </body>
