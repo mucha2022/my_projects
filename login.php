@@ -131,10 +131,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <div id="tab_view">
     <?php 
-        if(!empty($login_err)){
-            echo 'info: ' . $tab_view;
-        }        
-        ?>
+        echo 'info: ' . $tab_view;
+    ?>
     </div>
 </body>
 </html>
