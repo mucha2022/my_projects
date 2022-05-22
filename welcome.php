@@ -18,6 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <style>
         body{ font: 14px sans-serif; text-align: center; }
         .wrapper{ width: 360px; padding: 20px; text-align: center; }
+        .center { margin-left: auto; margin-right: auto; }   
     </style>
 </head>
 <body>
@@ -25,9 +26,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+        <div class="center">
         <?php 
             require_once "tab_view.php";
         ?>
+        </div>
     </p>
     <div class="wrapper">
     <?php 
