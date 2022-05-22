@@ -11,7 +11,7 @@
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "id: " . $row["id"]. " - User: " . $row["user"]. " - Pass: ******** " . "<br>";
+            echo "id: " . $row["id"]. " - User: " . $row["username"]. " - Pass: ******** " . "<br>";
         }
     } else {
         echo "0 results";
