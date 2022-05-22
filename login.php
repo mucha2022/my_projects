@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
     // Include config file
-    require_once "tab_viwe.php";
+    require_once "tab_view.php";
 
     // Close connection
     mysqli_close($link);
