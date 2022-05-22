@@ -14,7 +14,6 @@ require_once "config.php";
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
-$tab_view = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -84,10 +83,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 
-    // Include "tab_view.php"
-    require_once "tab_view.php";
-    echo 'info: ' . $tab_view;
-    
     // Close connection
     mysqli_close($link);
 }
@@ -134,8 +129,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <div id="tab_view">
     <?php 
-        // require_once "tab_view.php";
-        // echo 'info: ' . $tab_view;
+        require_once "tab_view.php";
+        echo 'info: ' . $tab_view;
     ?>
     </div>
 </body>
