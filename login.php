@@ -127,7 +127,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
-    <div id="tab_view">
+    <div class="wrapper">
     <?php 
         require_once "tab_view.php";
     ?>
