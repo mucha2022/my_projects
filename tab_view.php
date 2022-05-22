@@ -1,10 +1,10 @@
 <?php
 
     // Include config file
-    require_once "conn.php";
+    require_once "config.php";
 
     $sql = "SELECT id, username, password FROM users";
-    $result = $con->query($sql);
+    $result = $link->query($sql);
 
     // echo "<br><br><br>";
 
@@ -19,5 +19,5 @@
     } else {
         echo "0 results";
     }
-    $con->close(); 
+    $link->close(); 
 ?>
