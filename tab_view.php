@@ -1,10 +1,10 @@
 <?php
 
     $tab_view = "tab_view";
-
 /*
+
     $sql = "SELECT id, user, pass FROM users";
-    $result = $conn->query($sql);
+    $result = $link->query($sql);
 
     echo "<br><br><br>";
 
@@ -15,6 +15,5 @@
         }
     } else {
         echo "0 results";
-    }
-    $conn->close();*/
+    }*/
 ?>
