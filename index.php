@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>My first PHP page</h1>
-
 <?php
-echo "Hello Znojmo!";
-?>
-
-</body>
-</html> 
+$txt = "PHP";               // 
+echo "I love $txt.";        //
+?> 
